@@ -13,7 +13,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Agência de Inovação - OXYGENI HUB",
+  metadataBase: new URL("https://oxygeni.com.br"),
+  title: {
+    default: "Oxygeni HUB",
+    template: "%s | Oxygeni HUB",
+  },
+  description:
+    "Ecossistema de inovação, tecnologia e aprendizagem aplicada da Oxygeni.",
+  openGraph: {
+    type: "website",
+    url: "https://oxygeni.com.br",
+    siteName: "Oxygeni HUB",
+    title: "Oxygeni HUB",
+    description:
+      "Ambientes de inovação, laboratórios e experiências imersivas em tecnologia.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Oxygeni HUB",
+    description:
+      "Ecossistema de inovação, tecnologia e aprendizagem aplicada da Oxygeni.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

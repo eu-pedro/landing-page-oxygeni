@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export function CosmicHero() {
   return (
-    <div className="w-full mx-auto rounded-md  h-screen overflow-hidden">
+    <div className="w-full mx-auto h-dvh overflow-hidden">
       <Vortex
         backgroundColor="black"
         rangeY={800}
@@ -17,9 +17,9 @@ export function CosmicHero() {
       >
         <header className="w-full px-16 py-6 flex items-center justify-center">
           <Image
-            src="/oxygeni-logo.png"
+            src="/oxygeni-logo-white.png"
             alt="Logo da Oxygeni"
-            width={206}
+            width={90}
             height={54}
           />
         </header>
@@ -27,7 +27,7 @@ export function CosmicHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-white md:text-6xl text-center font-extrabold mt-[10%] leading-tight text-nowrap"
+          className="text-white text-4xl md:text-6xl text-center font-extrabold mt-[10%] leading-tight text-nowrap"
         >
           Agência de{" "}
         </motion.h2>
@@ -38,7 +38,7 @@ export function CosmicHero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
-          className="block text-white md:text-6xl font-extrabold mt-1"
+          className="block text-white text-3xl md:text-6xl font-extrabold mt-1"
         >
           da Universidade CEUMA
         </motion.span>
@@ -46,7 +46,7 @@ export function CosmicHero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-          className="text-white/70 md:text-2xl mt-6 text-center font-normal text-xl max-w-[643px]"
+          className="text-white/70 md:text-2xl mt-6 text-center font-normal text-md max-w-[643px]"
         >
           A Oxygeni DIT tem como missão principal oxigenar pessoas e empresas
           através do desenvolvimento de soluções inovadoras e tecnológicas.
