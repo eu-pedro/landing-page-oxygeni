@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/shadcn-io/marquee";
 import { ActivitiesGrid } from "./_components/activities-grid";
 import { SpaceCard } from "./_components/space-card";
+import { AppleLabSpace } from "./_components/apple-lab-space";
 
 const spaces = [
   {
@@ -193,6 +194,8 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <AppleLabSpace />
     </main>
   );
 }
