@@ -75,20 +75,20 @@ export default function Home() {
 
       <div className="flex size-full items-center justify-center bg-background">
         <Marquee>
-      <MarqueeFade side="left" />
-      <MarqueeFade side="right" />
-      <MarqueeContent>
-        {new Array(10).fill(null).map((_, index) => (
-          <MarqueeItem className="h-32 w-32" key={index}>
-            <img
-              alt={`Placeholder ${index}`}
-              className="overflow-hidden rounded-full"
-              src={`https://placehold.co/128x128?random=${index}`}
-            />
-          </MarqueeItem>
-        ))}
-      </MarqueeContent>
-    </Marquee>
+          <MarqueeFade side="left" />
+          <MarqueeFade side="right" />
+          <MarqueeContent>
+            {new Array(10).fill(null).map((_, index) => (
+              <MarqueeItem className="h-32 w-32" key={index}>
+                <img
+                  alt={`Placeholder ${index}`}
+                  className="overflow-hidden rounded-full"
+                  src={`https://placehold.co/128x128?random=${index}`}
+                />
+              </MarqueeItem>
+            ))}
+          </MarqueeContent>
+        </Marquee>
       </div>
 
       <div className="max-w-7xl mx-auto">
@@ -101,83 +101,98 @@ export default function Home() {
           <h2 className="text-[#1A151E] text-3xl font-bold">Alguma coisa</h2>
           <ActivitiesGrid />
         </section>
-        <section className=" px-10 ">
-          <div className="h-[0.8px] bg-zinc-400/60 w-full mb-15" />
+      </div>
 
-          <div className="grid lg:grid-cols-2 gap-7 grid-cols-1">
-            <div className="">
-              <h2 className="text-[#1A151E] text-5xl font-bold">Oxygeni HUB</h2>
+      <section className="bg-[#681CE3] py-10">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-white text-5xl font-bold leading-tight">
+            Oxygeni HUB
+          </h2>
+          <div className="grid lg:grid-cols-2 gap-12">
+            <div>
               <motion.p
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-                className="text-zinc-700 md:text-base mt-6 text-left font-normal"
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                className="text-white md:text-lg mt-6 font-normal leading-relaxed"
               >
                 O Oxygeni HUB reúne ambientes projetados para estimular a
                 colaboração, a troca de conhecimento e o desenvolvimento
                 contínuo. Cada espaço foi pensado para oferecer conforto,
                 tecnologia e dinamismo, permitindo que estudantes, pesquisadores
-                e profissionais se conectem e construam soluções inovadoras. O
-                ambiente incentiva a criatividade e o trabalho em equipe,
-                criando uma atmosfera viva e inspiradora para novas ideias.
+                e profissionais se conectem e construam soluções inovadoras.
               </motion.p>
 
               <motion.p
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-                className="text-zinc-700 md:text-base mt-6 text-left font-normal"
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.35 }}
+                className="text-white md:text-lg mt-5 font-normal leading-relaxed"
               >
                 Além das áreas de convivência, o hub conta com laboratórios
                 dedicados à prototipagem, pesquisa e testes de projetos
-                tecnológicos. Esses espaços são equipados com ferramentas e
-                recursos que permitem que ideias saiam do papel e avancem para
-                fases mais concretas de desenvolvimento. Aqui, estudantes e
-                equipes multidisciplinares encontram liberdade para
-                experimentar, aprender e validar soluções de forma prática.
+                tecnológicos. Esses espaços possuem recursos que permitem que
+                ideias avancem para etapas mais concretas de desenvolvimento,
+                incentivando a experimentação e o aprendizado prático.
               </motion.p>
 
               <motion.p
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-                className="text-zinc-700 md:text-base mt-6 text-left font-normal"
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.45 }}
+                className="text-white md:text-lg mt-5 font-normal leading-relaxed"
               >
-                O Oxygeni HUB funciona também como um ponto de encontro entre
-                talentos, professores, empresas e a comunidade acadêmica. É um
-                espaço que promove conexões estratégicas, eventos, workshops e
-                oportunidades de crescimento. Esse ecossistema fortalece o
-                empreendedorismo, impulsiona carreiras e aproxima iniciativas
-                que desejam transformar inovação em impacto real dentro e fora
-                da Universidade CEUMA.
+                O Oxygeni HUB também funciona como um ponto de encontro entre
+                talentos, professores, empresas e a comunidade acadêmica —
+                promovendo conexões estratégicas, eventos, workshops e
+                oportunidades de crescimento. O ecossistema impulsiona o
+                empreendedorismo e aproxima iniciativas que transformam inovação
+                em impacto real dentro e fora da Universidade CEUMA.
               </motion.p>
             </div>
 
-            <figure>
+            <figure className="grid grid-cols-2 gap-4">
               <Image
                 src="/oxygeni-hub.jpeg"
                 width={1080}
                 height={700}
-                alt=""
-                className="rounded-4xl"
+                alt="Oxygeni HUB"
+                className="rounded-3xl col-span-2 object-cover shadow-sm"
+              />
+
+              <Image
+                src="/oxygeni-hub.jpeg"
+                width={1080}
+                height={700}
+                alt="Oxygeni HUB espaço 1"
+                className="rounded-3xl object-cover shadow-sm"
+              />
+
+              <Image
+                src="/oxygeni-hub.jpeg"
+                width={1080}
+                height={700}
+                alt="Oxygeni HUB espaço 2"
+                className="rounded-3xl object-cover shadow-sm"
               />
             </figure>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-10 mb-10">
-            <h2 className="text-[#1A151E] text-5xl font-bold">Espaços</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-              {spaces.map((space) => (
-                <SpaceCard
-                  key={space.title}
-                  icon={space.icon}
-                  title={space.title}
-                  description={space.description}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+
+      <div className="max-w-7xl mx-auto mt-10 mb-10">
+        <h2 className="text-[#1A151E] text-5xl font-bold">Espaços</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          {spaces.map((space) => (
+            <SpaceCard
+              key={space.title}
+              icon={space.icon}
+              title={space.title}
+              description={space.description}
+            />
+          ))}
+        </div>
       </div>
     </main>
   );
@@ -224,7 +239,7 @@ export function FollowingPointerDemo() {
       >
         <div className="group relative h-full overflow-hidden rounded-2xl border border-zinc-100 bg-white transition duration-200 hover:shadow-xl">
           <div className="p-4">
-            <h2 className="my-4 text-lg font-bold text-zinc-700">
+            <h2 className="my-4 text-lg font-bold text-white">
               {blogContent.title}
             </h2>
             <h2 className="my-4 text-sm font-normal text-zinc-500">
