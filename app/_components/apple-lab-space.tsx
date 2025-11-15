@@ -46,8 +46,6 @@ export function AppleLabSpace() {
             )}
           </motion.div>
 
-          {/* TÍTULO */}
-          <AnimateOnScroll>
             <motion.h2
               id="spaces"
               initial={{ opacity: 0, y: 20 }}
@@ -58,11 +56,8 @@ export function AppleLabSpace() {
             >
               APPLE LAB
             </motion.h2>
-          </AnimateOnScroll>
 
-          {/* GRID PRINCIPAL */}
           <div className="grid gap-10 lg:gap-12 text-white/90 leading-relaxed lg:grid-cols-1">
-            {/* LISTA DE LABS */}
             <motion.div
               initial="hidden"
               whileInView="visible"
