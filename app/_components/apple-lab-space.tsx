@@ -18,7 +18,7 @@ export function AppleLabSpace() {
           </span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-8 sm:mb-10 text-left md:text-left">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-8 sm:mb-10 text-left md:text-left" id="spaces">
           APPLE LAB
         </h2>
 

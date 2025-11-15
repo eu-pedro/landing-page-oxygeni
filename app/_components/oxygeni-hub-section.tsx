@@ -12,8 +12,6 @@ export function OxygeniHubSection() {
             scroll-mt-24 transition-all duration-500 
             mb-6 sm:mb-8 
             md:text-left
-            target:scale-[1.03]
-            target:text-[#E2C2FF]
             target:drop-shadow-[0_0_25px_rgba(199,139,255,0.7)]
           "
         >
