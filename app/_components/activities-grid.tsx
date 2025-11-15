@@ -1,12 +1,5 @@
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { MapPin, CalendarDays } from "lucide-react";
 
 type Activity = {
@@ -21,8 +14,8 @@ const activities: Activity[] = [
   {
     id: 2,
     title: "Novo Espaço da Oxygeni HUB",
-    date: "01 Dez 2025 • 10h",
-    location: "Renascença • São Luís - MA",
+    date: "18 Novembro 2025 • 08h às 22h",
+    location: "CEUMA Renascença • São Luís - MA",
     shortDescription:
       "Venha conhecer o novo espaço da Oxygeni HUB e participar da inauguração oficial.",
   },
@@ -92,20 +85,6 @@ export function ActivitiesGrid() {
               <span>{activity.location}</span>
             </div>
           </CardContent>
-
-          <CardFooter className="mt-2 flex justify-between items-center">
-            <Button
-              size="sm"
-              className="
-                rounded-full bg-[#5127FF] text-xs font-semibold text-white
-                px-4 py-1.5 shadow-sm
-                hover:bg-[#4120cc] hover:shadow-md
-                transition-all duration-150
-              "
-            >
-              Ver detalhes
-            </Button>
-          </CardFooter>
         </Card>
       ))}
     </div>

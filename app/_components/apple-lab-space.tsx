@@ -15,7 +15,6 @@ export function AppleLabSpace() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
-          {/* BADGES */}
           <motion.div
             className="flex flex-wrap gap-3 mb-6"
             initial="hidden"
@@ -46,18 +45,20 @@ export function AppleLabSpace() {
             )}
           </motion.div>
 
-            <motion.h2
-              id="spaces"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-8 sm:mb-10"
-            >
-              APPLE LAB
-            </motion.h2>
+          <motion.h2
+            id="spaces"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-8 sm:mb-10"
+          >
+            APPLE LAB
+          </motion.h2>
 
+          {/* GRID PRINCIPAL */}
           <div className="grid gap-10 lg:gap-12 text-white/90 leading-relaxed lg:grid-cols-1">
+            {/* LISTA DE LABS */}
             <motion.div
               initial="hidden"
               whileInView="visible"

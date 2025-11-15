@@ -47,7 +47,7 @@ export default function Home() {
         </section>
 
         <section className="w-full bg-white px-4 mt-10">
-          <h2 className="text-[#1A151E] text-3xl font-bold">Alguma coisa</h2>
+          <h2 className="text-[#1A151E] text-3xl font-bold">Atividades</h2>
           <ActivitiesGrid />
         </section>
       </div>

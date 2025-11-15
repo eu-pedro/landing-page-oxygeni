@@ -6,7 +6,7 @@ import { Instagram, Mail, MapPin, Phone, Globe2 } from "lucide-react";
 export function Footer() {
   return (
     <footer className="bg-[rgb(14,11,16)] text-neutral-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-18 lg:py-14">
         <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:items-start">
           <div className="max-w-md">
             <div className="flex gap-3">
