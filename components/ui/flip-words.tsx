@@ -1,11 +1,11 @@
 "use client";
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion, LayoutGroup } from "motion/react";
+import { useCallback, useEffect, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 export const FlipWords = ({
   words,
-  duration = 3000,
+  duration = 1500, // antes era 3000
   className,
 }: {
   words: string[];
@@ -22,10 +22,13 @@ export const FlipWords = ({
   }, [currentWord, words]);
 
   useEffect(() => {
-    if (!isAnimating)
-      setTimeout(() => {
+    if (!isAnimating) {
+      const timeout = setTimeout(() => {
         startAnimation();
       }, duration);
+
+      return () => clearTimeout(timeout);
+    }
   }, [isAnimating, duration, startAnimation]);
 
   return (
@@ -45,8 +48,8 @@ export const FlipWords = ({
         }}
         transition={{
           type: "spring",
-          stiffness: 100,
-          damping: 10,
+          stiffness: 120,
+          damping: 12,
         }}
         exit={{
           opacity: 0,
@@ -68,8 +71,8 @@ export const FlipWords = ({
             initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{
-              delay: wordIndex * 0.3,
-              duration: 0.3,
+              delay: wordIndex * 0.12, // antes 0.3
+              duration: 0.15, // antes 0.1 (um pouquinho mais suave)
             }}
             className="inline-block whitespace-nowrap"
           >
@@ -79,8 +82,8 @@ export const FlipWords = ({
                 initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{
-                  delay: wordIndex * 0.3 + letterIndex * 0.05,
-                  duration: 0.9,
+                  delay: wordIndex * 0.12 + letterIndex * 0.02, // antes 0.05
+                  duration: 0.35, // antes 0.9
                 }}
                 className="inline-block text-[#681CE3]"
               >
