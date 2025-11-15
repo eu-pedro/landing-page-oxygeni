@@ -1,4 +1,4 @@
-import { ArrowUpRight, Globe2, Instagram, Linkedin, Mail } from "lucide-react";
+import { ArrowUpRight, Globe2 } from "lucide-react";
 
 const links = [
   {
@@ -29,8 +29,8 @@ const links = [
 
 export function LinkTreeGrid() {
   return (
-    <section className="w-full px-10 mx-auto py-10">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <section className="w-full mx-auto py-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {links.map((link) => (
           <a
             key={link.title}

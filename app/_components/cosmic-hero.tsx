@@ -27,7 +27,7 @@ export function CosmicHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-white text-[40px] md:text-6xl text-center font-extrabold mt-[10%] leading-tight text-nowrap"
+          className="text-white md:text-6xl text-center font-extrabold mt-[10%] leading-tight text-nowrap"
         >
           Agência de{" "}
         </motion.h2>
@@ -38,7 +38,7 @@ export function CosmicHero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
-          className="block text-white text-[32px] md:text-[40px] font-extrabold mt-1"
+          className="block text-white md:text-6xl font-extrabold mt-1"
         >
           da Universidade CEUMA
         </motion.span>
