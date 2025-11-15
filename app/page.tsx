@@ -6,12 +6,13 @@ import { CosmicHero } from "./_components/cosmic-hero";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
-  Code2, Coffee,
+  Code2,
+  Coffee,
   Cpu,
   Layers,
   Lightbulb,
   Presentation,
-  Users
+  Users,
 } from "lucide-react";
 import {
   Marquee,
@@ -22,6 +23,7 @@ import {
 import { ActivitiesGrid } from "./_components/activities-grid";
 import { SpaceCard } from "./_components/space-card";
 import { AppleLabSpace } from "./_components/apple-lab-space";
+import { OxygeniHubSection } from "./_components/oxygeni-hub-section";
 
 const spaces = [
   {
@@ -103,83 +105,7 @@ export default function Home() {
         </section>
       </div>
 
-      <section className="bg-[#681CE3] py-10">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-white text-5xl font-bold leading-tight">
-            Oxygeni HUB
-          </h2>
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <motion.p
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-                className="text-white md:text-lg mt-6 font-normal leading-relaxed"
-              >
-                O Oxygeni HUB reúne ambientes projetados para estimular a
-                colaboração, a troca de conhecimento e o desenvolvimento
-                contínuo. Cada espaço foi pensado para oferecer conforto,
-                tecnologia e dinamismo, permitindo que estudantes, pesquisadores
-                e profissionais se conectem e construam soluções inovadoras.
-              </motion.p>
-
-              <motion.p
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.35 }}
-                className="text-white md:text-lg mt-5 font-normal leading-relaxed"
-              >
-                Além das áreas de convivência, o hub conta com laboratórios
-                dedicados à prototipagem, pesquisa e testes de projetos
-                tecnológicos. Esses espaços possuem recursos que permitem que
-                ideias avancem para etapas mais concretas de desenvolvimento,
-                incentivando a experimentação e o aprendizado prático.
-              </motion.p>
-
-              <motion.p
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.45 }}
-                className="text-white md:text-lg mt-5 font-normal leading-relaxed"
-              >
-                O Oxygeni HUB também funciona como um ponto de encontro entre
-                talentos, professores, empresas e a comunidade acadêmica —
-                promovendo conexões estratégicas, eventos, workshops e
-                oportunidades de crescimento. O ecossistema impulsiona o
-                empreendedorismo e aproxima iniciativas que transformam inovação
-                em impacto real dentro e fora da Universidade CEUMA.
-              </motion.p>
-            </div>
-
-            <figure className="grid grid-cols-2 gap-4">
-              <Image
-                src="/oxygeni-hub.jpeg"
-                width={1080}
-                height={700}
-                alt="Oxygeni HUB"
-                className="rounded-3xl col-span-2 object-cover shadow-sm"
-              />
-
-              <Image
-                src="/oxygeni-hub.jpeg"
-                width={1080}
-                height={700}
-                alt="Oxygeni HUB espaço 1"
-                className="rounded-3xl object-cover shadow-sm"
-              />
-
-              <Image
-                src="/oxygeni-hub.jpeg"
-                width={1080}
-                height={700}
-                alt="Oxygeni HUB espaço 2"
-                className="rounded-3xl object-cover shadow-sm"
-              />
-            </figure>
-          </div>
-        </div>
-      </section>
-
+      <OxygeniHubSection />
 
       <div className="max-w-7xl mx-auto mt-10 mb-10">
         <h2 className="text-[#1A151E] text-5xl font-bold">Espaços</h2>
@@ -199,4 +125,3 @@ export default function Home() {
     </main>
   );
 }
-
