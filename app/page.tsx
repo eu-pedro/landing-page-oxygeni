@@ -14,8 +14,8 @@ import { ActivitiesGrid } from "./_components/activities-grid";
 import { AppleLabSpace } from "./_components/apple-lab-space";
 import { OxygeniHubSection } from "./_components/oxygeni-hub-section";
 import { Spaces } from "./_components/spaces";
-import { AnimateOnScroll } from "./_components/animate-on-scroll";
 import { Footer } from "./_components/footer";
+import ResetSpace from "./_components/reset-space";
 
 export default function Home() {
   return (
@@ -54,11 +54,11 @@ export default function Home() {
 
       <OxygeniHubSection />
 
-      <AnimateOnScroll>
-        <Spaces />
-      </AnimateOnScroll>
+      <Spaces />
 
       <AppleLabSpace />
+
+      <ResetSpace />
 
       <Footer />
     </main>
