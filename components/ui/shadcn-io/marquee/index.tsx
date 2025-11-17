@@ -9,7 +9,7 @@ export type MarqueeProps = HTMLAttributes<HTMLDivElement>;
 
 export const Marquee = ({ className, ...props }: MarqueeProps) => (
   <div
-    className={cn('relative w-full overflow-hidden', className)}
+    className={cn('relative w-full overflow-hidden p-5', className)}
     {...props}
   />
 );
@@ -19,7 +19,7 @@ export type MarqueeContentProps = FastMarqueeProps;
 export const MarqueeContent = ({
   loop = 0,
   autoFill = true,
-  pauseOnHover = true,
+  pauseOnHover = false,
   ...props
 }: MarqueeContentProps) => (
   <FastMarquee
@@ -41,7 +41,7 @@ export const MarqueeFade = ({
 }: MarqueeFadeProps) => (
   <div
     className={cn(
-      'absolute top-0 bottom-0 z-10 h-full w-24 from-background to-transparent',
+      'absolute top-0 bottom-0 z-10  h-full  w-24 from-bg-[#3d00a010] to-transparent',
       side === 'left' ? 'left-0 bg-gradient-to-r' : 'right-0 bg-gradient-to-l',
       className
     )}
@@ -53,7 +53,7 @@ export type MarqueeItemProps = HTMLAttributes<HTMLDivElement>;
 
 export const MarqueeItem = ({ className, ...props }: MarqueeItemProps) => (
   <div
-    className={cn('mx-2 flex-shrink-0 object-contain', className)}
+    className={cn('mx-2 overflow-hidden object-cover  flex items-center', className)}
     {...props}
   />
 );

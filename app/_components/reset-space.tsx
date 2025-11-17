@@ -12,7 +12,7 @@ export default function ResetSpace() {
           </span>
 
           <span className="px-4 py-1 rounded-full text-xs sm:text-sm font-medium text-white bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_0_12px_rgba(255,255,255,0.15)]">
-            Conecões
+            Coneções
           </span>
 
           <span className="px-4 py-1 rounded-full text-xs sm:text-sm font-medium text-white bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_0_12px_rgba(255,255,255,0.15)]">
@@ -137,10 +137,6 @@ export default function ResetSpace() {
             </div>
          
       </div>
-
-  
-
-
 
     </section>
   );
