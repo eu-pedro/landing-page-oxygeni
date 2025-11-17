@@ -3,29 +3,24 @@
 import Image from "next/image";
 
 export function EcosystemsCasulo() {
-  
   return (
-    <section className="relative w-full bg-linear-to-b text-black py-12 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="relative w-full bg-linear-to-b text-black py-12 sm:py-16 lg:py-20 px-8 lg:px-6 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         <h2 className="text-3xl flex flex-col   sm:text-4xl lg:text-5xl font-extrabold text-black mb-8 sm:mb-5 text-left md:text-left">
-          Interdisciplinaridade <span className="bg-gradient-to-r from-[#1e0a75] to-[#9d14ff] bg-clip-text text-transparent">e visão de ecossistema</span>  
+          Interdisciplinaridade{" "}
+          <span className="bg-gradient-to-r from-[#1e0a75] to-[#9d14ff] bg-clip-text text-transparent">
+            e visão de ecossistema
+          </span>
         </h2>
 
         <div className="grid lg:gap-12  leading-relaxed lg:grid-cols-1">
           <div className="space-y-6 w-[67vw] sm:space-y-8">
-<div>
-
-  <h3 className="font-bold text-lg sm:text-xl text-black mb-1 mt-[-20px]">
-    A Sala CASULO será utilizada como "base de
-    lançamento" de diversas iniciativas do Oxygeni HUB
-  </h3>
-</div>
-
-            
-
-
-
+            <div>
+              <h3 className="font-bold text-lg sm:text-xl text-black mb-1 ">
+                A Sala CASULO será utilizada como "base de lançamento" de
+                diversas iniciativas do Oxygeni HUB
+              </h3>
+            </div>
           </div>
 
           <div className="space-y-8">
@@ -51,45 +46,36 @@ export function EcosystemsCasulo() {
                 ))}
               </ul>
             </div>
- 
           </div>
-          
         </div>
-    
       </div>
-        <div className="flex flex-col sm:flex-row items-start justify-between border-t border-white/10 mt-[100px] bg-gray-900 w-full px-4 sm:px-10 py-10 sm:py-16 relative overflow-hidden">
-        
-        {/* Texto */}
+      <div className="flex flex-col sm:flex-row items-start justify-between border-t border-white/10 mt-[100px] bg-gray-900 w-full px-4 sm:px-10 py-10 sm:py-16 relative overflow-hidden">
         <div className="max-w-xl space-y-4">
-            <div className="flex items-center gap-2 text-[#C78BFF] font-semibold">
+          <div className="flex items-center gap-2 text-[#C78BFF] font-semibold">
             <span className="text-2xl sm:text-5xl">➜</span>
             <h1 className="text-2xl sm:text-4xl text-white">
-                Benefício Intercurso
+              Benefício Intercurso
             </h1>
-            </div>
+          </div>
 
-            <p className="text-xs sm:text-sm md:text-base text-white/90 leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base text-white/90 leading-relaxed">
             A Sala CASULO é um ponto de conexão, diálogo e construção. Um espaço
-            pensado para acolher ideias e transformá-las em soluções reais. Com foco
-            em integração com o ecossistema externo, ela fortalece o protagonismo
-            estudantil e posiciona a Universidade CEUMA como um ambiente inovador,
-            conectado e relevante para o futuro do trabalho.
-            </p>
+            pensado para acolher ideias e transformá-las em soluções reais. Com
+            foco em integração com o ecossistema externo, ela fortalece o
+            protagonismo estudantil e posiciona a Universidade CEUMA como um
+            ambiente inovador, conectado e relevante para o futuro do trabalho.
+          </p>
         </div>
-
-        {/* Logo (some no mobile) */}
         <div className="hidden sm:flex items-center justify-end opacity-20 pointer-events-none">
-            <Image
+          <Image
             src="/oxygeni-logo.webp"
             alt="Oxygeni HUB marca d'água"
             width={600}
             height={400}
             className="object-contain w-[180px] md:w-[300px] lg:w-[450px]"
-            />
+          />
         </div>
-        </div>
-
-
+      </div>
     </section>
   );
 }

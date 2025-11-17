@@ -2,7 +2,7 @@
 
 export function SalaPitchSpace() {
   return (
-    <section className="relative w-full  bg-[#4A0B78] py-12 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="relative w-full  bg-[#4A0B78] py-12 sm:py-16 lg:py-20 px-8 lg:px-6 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap gap-3 mb-6 justify-start md:justify-start">
           <span className="px-4 py-1 rounded-full text-xs sm:text-sm font-medium text-white bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_0_12px_rgba(255,255,255,0.15)]">

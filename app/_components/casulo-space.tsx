@@ -16,8 +16,7 @@ export function CasuloSpace() {
   ];
 
   return (
-    <section className="relative mt-[0.1px] w-full bg-[#681CE3] text-white mt-10 py-16 sm:py-20 overflow-hidden">
-      
+    <section className="relative mt-[0.1px] px-8 lg:px-6 w-full bg-[#681CE3] text-white mt-10 py-16 sm:py-20 overflow-hidden">
       <div className="absolute inset-y-0 right-[-20%] hidden sm:flex items-center justify-end opacity-[0.4] pointer-events-none">
         <Image
           src="/oxygeni-logo.webp"
@@ -29,27 +28,24 @@ export function CasuloSpace() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-10 space-y-16">
-        {/* Bloco principal (chips + título + parágrafo) */}
         <div className="max-w-3xl text-left">
           <div className="flex flex-wrap gap-3 pt-4 sm:pt-6 mb-6">
             <span className="px-4 py-1 rounded-full text-xs sm:text-sm font-medium text-white bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_0_12px_rgba(255,255,255,0.15)]">
               Inovação
             </span>
             <span className="px-4 py-1 rounded-full text-xs sm:text-sm font-medium text-white bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_0_12px_rgba(255,255,255,0.15)]">
-              AMBIENTE DE CONEXÕES
+              Ambiente de conexões
             </span>
             <span className="px-4 py-1 rounded-full text-xs sm:text-sm font-medium text-white bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_0_12px_rgba(255,255,255,0.15)]">
-              ESTRATÉGIAS
+              Estratégias
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-            CASULO
-          </h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">CASULO</h1>
 
           <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg leading-relaxed">
-            A Sala CASULO foi pensada como um ambiente reservado, inspirador
-            e altamente funcional para interações com o mundo externo, servindo
+            A Sala CASULO foi pensada como um ambiente reservado, inspirador e
+            altamente funcional para interações com o mundo externo, servindo
             como ponte entre a Universidade CEUMA e o ecossistema de inovação,
             startups e empresas parceiras. Seu ambiente mais intimista e
             confortável favorece reuniões estratégicas, mentorias, trocas de
@@ -57,12 +53,7 @@ export function CasuloSpace() {
           </p>
         </div>
 
-        {/* Bloco das atividades previstas */}
         <div className="relative flex flex-col gap-8 mt-[200px] w-[82vw]">
-          
-
-
-          
           <div className="relative z-10 w-full  max-w-3xl text-left   sm:mt-6 ml-[1%] text-sm sm:text-base md:text-lg leading-relaxed ">
             <div className="inline-flex items-center gap-2 rounded-full px-5 py-2 bg-[#7b2cff] text-xs sm:text-sm font-semibold text-white shadow-[0_0_18px_rgba(123,44,255,0.6)] mb-6">
               Atividades previstas

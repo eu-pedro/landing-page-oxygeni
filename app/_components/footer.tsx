@@ -77,15 +77,15 @@ export function Footer() {
                 <li className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-neutral-500" />
                   <a
-                    href="mailto:contato@oxygeni.com.br"
+                    href="mailto:oxyhub.contato@gmail.com"
                     className="hover:text-white transition-colors"
                   >
-                    contato@oxygeni.com.br
+                    oxyhub.contato@gmail.com
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-neutral-500" />
-                  <span>(xx) xxxx-xxxx</span>
+                  <span>(98) 98807-5118</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 mt-0.5 text-neutral-500" />
@@ -104,7 +104,7 @@ export function Footer() {
               <ul className="space-y-2 text-sm text-neutral-400">
                 <li>
                   <a
-                    href="https://instagram.com/oxygenihub"
+                    href="https://www.instagram.com/oxygenihub/"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 hover:text-white transition-colors"
@@ -115,18 +115,7 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://oxygeni.com.br"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 hover:text-white transition-colors"
-                  >
-                    <Globe2 className="h-4 w-4" />
-                    <span>oxygeni.com.br</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://instagram.com/incode.techschool"
+                    href="https://www.instagram.com/incodetechschool/"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 hover:text-white transition-colors"

@@ -5,7 +5,7 @@ import { AnimateOnScroll } from "./animate-on-scroll";
 
 export function AppleLabSpace() {
   return (
-    <section className="relative w-full bg-linear-to-b from-[#2A0140] to-[#4A0B78] py-12 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="relative w-full bg-linear-to-b from-[#2A0140] to-[#4A0B78] py-12 sm:py-16 px-8 lg:px-6 lg:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap gap-3 mb-6">
           {["Robótica", "Inteligência Artificial", "Digitais Imersivas"].map(

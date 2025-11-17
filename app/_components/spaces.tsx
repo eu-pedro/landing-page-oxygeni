@@ -56,7 +56,7 @@ const spaces = [
 
 export function Spaces() {
   return (
-    <section className="w-full py-10 sm:py-12 lg:py-16">
+    <section className="w-full py-10 sm:py-12 px-8 lg:px-6 lg:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <h2 className="text-[#1A151E] text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
           Espaços

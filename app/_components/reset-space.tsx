@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ResetSpace() {
   return (
-    <section className="relative w-full bg-linear-to-b from-[#4A0B78] to-[#2A0140] py-12 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="relative w-full bg-linear-to-b from-[#4A0B78] to-[#2A0140] py-12 sm:py-16 px-8 lg:px-6 lg:py-20 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
 
        

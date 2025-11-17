@@ -79,7 +79,15 @@ import { AppleLabSpace } from "./_components/apple-lab-space";
 import { OxygeniHubSection } from "./_components/oxygeni-hub-section";
 import ResetSpace from "./_components/reset-space";
 import { Spaces } from "./_components/spaces";
+
 import { Footer } from "./_components/footer";
+
+
+import ColabSpace from "./_components/colab-space";
+
+
+import IncodeSpace from "./_components/incode-space";
+
 
 export default function Home() {
   const partnerLogos = [
@@ -147,12 +155,12 @@ export default function Home() {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        <section className="w-full bg-white px-4 mt-10">
-          <h2 className="text-[#1A151E] text-3xl font-bold">Alguma coisa</h2>
+        <section className="w-full bg-white px-8 lg:px-6 mt-10">
+          <h2 className="text-[#1A151E] text-3xl font-bold">Programas</h2>
           <LinkTreeGrid />
         </section>
 
-        <section className="w-full bg-white px-4 mt-10">
+        <section className="w-full bg-white px-8 lg:px-6 mt-10">
           <h2 className="text-[#1A151E] text-3xl font-bold">Atividades</h2>
           <ActivitiesGrid />
         </section>
@@ -163,7 +171,9 @@ export default function Home() {
       <Spaces />
 
       <AppleLabSpace />
-      <ResetSpace />
+
+
+      
       <CasuloSpace />
       <FeatureCasulo />
       <EcosystemsCasulo />
@@ -172,7 +182,9 @@ export default function Home() {
       <SalaPitchSpace />
       <SalaPitchInstructions />
       <SalaPitchIntro />
-
+      <ColabSpace />
+      <ResetSpace />
+      <IncodeSpace />
       <Footer />
     </main>
   );

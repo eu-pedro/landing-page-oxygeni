@@ -1,15 +1,12 @@
-"use client";
-
-import { section } from "framer-motion/client";
-
 export function FeatureCasulo() {
-  
   return (
-    <section className="relative w-full bg-linear-to-b from-[#2A0140] to-[#4A0B78] py-12 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="relative w-full bg-linear-to-b from-[#2A0140] to-[#4A0B78] py-12 sm:py-16 lg:py-20 px-8 lg:px-6 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         <h2 className="text-3xl flex flex-col   sm:text-4xl lg:text-5xl font-extrabold text-white mb-8 sm:mb-5 text-left md:text-left">
-          Ambiente voltado <span className="bg-gradient-to-r from-[#ffffff] to-[#4A0B78] bg-clip-text text-transparent">para relações de valor</span>  
+          Ambiente voltado{" "}
+          <span className="bg-linear-to-r from-[#ffffff] to-[#4A0B78] bg-clip-text text-transparent">
+            para relações de valor
+          </span>
         </h2>
 
         <div className="grid lg:gap-12 text-white/90 leading-relaxed lg:grid-cols-1">
@@ -18,13 +15,7 @@ export function FeatureCasulo() {
               <h3 className="font-bold text-lg sm:text-xl text-white mb-1">
                 O CASULO é mais do que uma simples sala de reuniões.
               </h3>
-        
             </div>
-
-            
-
-
-
           </div>
 
           <div className="space-y-8">
@@ -50,15 +41,9 @@ export function FeatureCasulo() {
                 ))}
               </ul>
             </div>
-
-
-            
           </div>
         </div>
-    
       </div>
-
-
     </section>
   );
 }

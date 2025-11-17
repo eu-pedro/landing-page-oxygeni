@@ -4,7 +4,7 @@ import { AnimateOnScroll } from "./animate-on-scroll";
 
 export function OxygeniHubSection() {
   return (
-    <section className="bg-[#681CE3] py-10 sm:py-14 lg:py-20">
+    <section className="bg-[#681CE3] py-10 sm:py-14 px-8 lg:px-6 lg:py-20">
       <AnimateOnScroll>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
